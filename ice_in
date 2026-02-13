@@ -10,7 +10,7 @@
   history_chunksize = 720, 540
   history_precision = 8
   restart_deflate = 1
-  ice_ic = 'none' 
+  ice_ic = './INPUT/iced.1900-01-01-10800.nc' 
   lcdf64 = .false.
   npt = 35040
   pointer_file = './rpointer.ice'
@@ -39,8 +39,22 @@
   dsdt_slow_mode = -5e-08
 /
 &dynamics_nml
-  advection = "remap"
-  ssh_stress = "coupled"
+  kdyn                 = 1
+  ndte                 = 720
+  kstrength            = 0
+  Ktens                = 0.2
+  e_yieldcurve         = 1.2
+  e_plasticpot         = 1.2
+  boundary_condition   = 'no_slip'
+  lateral_drag         = .false.
+  form_func            = 'static'
+  Cs                   = 1e-3
+  Cq                   = 0.0
+  u_cap                = 0.0
+  C_L                  = 0.0
+  u0                   = 5e-5
+  advection            = "remap"
+  ssh_stress           = "coupled"
 /
 &shortwave_nml
   ahmax = 0.1
