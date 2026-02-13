@@ -1,6 +1,6 @@
-contact: Add your name here
-email: Add your email address here
-created: Add the date you started the experiment here (YYYY-MM-DD)
+contact: dpath2o
+email: dpath2o@mac.com
+created: '2026-02-13'
 description: |-
   25km ACCESS-OM3 global configuration under interannual forcing.
   Initial conditions of temperature and salinity are from WOA23.
@@ -10,15 +10,24 @@ notes: |-
   following the examples at https://www.access-nri.org.au/resources/acknowledging-us/ 
   and https://cosima.org.au/index.php/get-involved/
 keywords:
-  - JRA55
-  - access-om3
-  - interannual
-  - global
+- JRA55
+- access-om3
+- interannual
+- global
 realm:
-  - ocean
-  - seaIce
+- ocean
+- seaIce
 nominal_resolution: 25 km
 license: CC-BY-4.0
 model: ACCESS-OM3
-url: https://github.com/ACCESS-NRI/access-om3-configs/tree/release-MC_25km_jra_iaf
+url: https://github.com/ACCESS-NRI/access-om3-configs.git
 version: 1.0-beta
+experiment_uuid: 3c5221a0-d47a-443a-a155-3b3d0be1649b
+name: 25km_jra_iaf_ld-expt-3c5221a0
+schema_version:  # The version of the schema (string)
+long_description: # Long description of the experiment (string)
+frequency: # The frequency(/ies) included in the experiment (string)
+variable: # The variable(s) included in the experiment (string)
+reference: # Citation or reference information (string)
+parent_experiment: # experiment_uuid for parent experiment if appropriate (string)
+related_experiments: # experiment_uuids for any related experiment(s) (string)
