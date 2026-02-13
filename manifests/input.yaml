@@ -3404,8 +3404,8 @@ work/INPUT/chl_globcolour_monthly_clim.nc:
 work/INPUT/iced.1900-01-01-10800.nc:
   fullpath: /g/data/gv90/da1339/afim_input/cice/ic/iced.1900-01-01-10800.nc
   hashes:
-    binhash: 1869f742f943388f622c7735d69480a3
-    md5: bfdadd2eef6f420b33d68c8669ecf402
+    binhash: cd62b90f97fabcd9e73abd360d24c8fe
+    md5: 358d6cd4ff72e1a4625d58a0329e2bf5
 work/INPUT/kmt.nc:
   fullpath: /g/data/vk83/configurations/inputs/access-om3/cice/grids/global.25km/2025.11.27/kmt.nc
   hashes:

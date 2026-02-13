@@ -274,10 +274,10 @@ CLOCK_attributes::
      rof_cpl_dt = 99999 #not used
      start_tod = 0
      start_ymd = 19930701
-     stop_n = 10
-     stop_option = ndays
+     stop_n = 4
+     stop_option = nmonths
      stop_tod = 0
-     stop_ymd = 19930711
+     stop_ymd = 19931031
      tprof_n = -999
      tprof_option = never
      tprof_ymd = -999
