@@ -20,10 +20,10 @@ realm:
 nominal_resolution: 25 km
 license: CC-BY-4.0
 model: ACCESS-OM3
-url: https://github.com/ACCESS-NRI/access-om3-configs.git
+url: git@github.com:ACCESS-NRI/access-om3-configs.git
 version: 1.0-beta
-experiment_uuid: 3c5221a0-d47a-443a-a155-3b3d0be1649b
-name: 25km_jra_iaf_ld-expt-3c5221a0
+experiment_uuid: 154bc4df-0046-48e0-8413-a242d29783b1
+name: 25km_jra_iaf_ld-dpath2o/dev-MC_25km_jra_iaf-154bc4df
 schema_version:  # The version of the schema (string)
 long_description: # Long description of the experiment (string)
 frequency: # The frequency(/ies) included in the experiment (string)
