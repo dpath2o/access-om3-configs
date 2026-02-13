@@ -1,37 +1,43 @@
 &setup_nml
-  bfbflag = "off" 
-  conserv_check = .false.
-  diagfreq = 960
-  dumpfreq = "x"
-  histfreq = "d", "m", "x", "x", "x"
-  hist_suffix = ".1day.mean", ".1mon.mean", "x", "x", "x"
-  hist_time_axis = "middle"
-  history_deflate = 1
+  bfbflag           = "off" 
+  conserv_check     = .false.
+  diagfreq          = 960
+  dumpfreq          = "x"
+  histfreq          = "d", "m", "x", "x", "x"
+  hist_suffix       = ".1day.mean", ".1mon.mean", "x", "x", "x"
+  hist_time_axis    = "middle"
+  history_deflate   = 1
   history_chunksize = 720, 540
   history_precision = 8
-  restart_deflate = 1
-  ice_ic = './INPUT/iced.1900-01-01-10800.nc' 
-  lcdf64 = .false.
-  npt = 35040
-  pointer_file = './rpointer.ice'
-  print_global = .false.
+  restart_deflate   = 1
+  ice_ic            = './INPUT/iced.1900-01-01-10800.nc' 
+  lcdf64            = .false.
+  npt               = 35040
+  pointer_file      = './rpointer.ice'
+  print_global      = .false.
 /
 &grid_nml
   bathymetry_file = "./INPUT/topog.nc"
-  grid_atm = "A"
-  grid_file = "./INPUT/ocean_hgrid.nc"
-  grid_format = "mom_nc"
-  grid_ice = "B"
-  grid_ocn = "A"
-  grid_type = "tripole"
-  grid_outfile = .true.
-  kcatbound = 0
-  kmt_file = "./INPUT/kmt.nc"
-  nblyr = 1
-  ncat = 5
-  nfsd = 1
-  nilyr = 4
-  nslyr = 1
+  grid_atm        = "A"
+  grid_file       = "./INPUT/ocean_hgrid.nc"
+  grid_format     = "mom_nc"
+  grid_ice        = "B"
+  grid_ocn        = "A"
+  grid_type       = "tripole"
+  grid_outfile    = .true.
+  kcatbound       = 0
+  kmt_file        = "./INPUT/kmt.nc"
+  F2_file         = './INPUT/ADD_high-res_cstln_v7p9_GI.nc'
+  F2x_varname     = 'F2x'
+  F2y_varname     = 'F2y'
+  F2_map_method   = 'max'
+  F2_test         = .false.
+  F2_test_val     = 0.25
+  nblyr           = 1
+  ncat            = 5
+  nfsd            = 1
+  nilyr           = 4
+  nslyr           = 1
 /
 &tracer_nml
 /
@@ -57,43 +63,43 @@
   ssh_stress           = "coupled"
 /
 &shortwave_nml
-  ahmax = 0.1
-  albicei = 0.44
-  albicev = 0.86
-  albsnowi = 0.7
-  albsnowv = 0.98
-  kalg = 0.0
-  r_snw = 0.0
+  ahmax     = 0.1
+  albicei   = 0.44
+  albicev   = 0.86
+  albsnowi  = 0.7
+  albsnowv  = 0.98
+  kalg      = 0.0
+  r_snw     = 0.0
   sw_redist = .true.
 /
 &ponds_nml
-  dpscale = 1.0e-3
-  frzpnd = "hlid"
+  dpscale  = 1.0e-3
+  frzpnd   = "hlid"
   rfracmax = 1.0
 /
 &snow_nml
 /
 &forcing_nml
-  emissivity = 0.95d0
+  emissivity       = 0.95d0
   ice_ref_salinity = 5.0d0
-  highfreq = .true.
-  tfrz_option = "linear_salt"
-  update_ocn_f = .true.
-  ustar_min = 0.0005
+  highfreq         = .true.
+  tfrz_option      = "linear_salt"
+  update_ocn_f     = .true.
+  ustar_min        = 0.0005
 /
 &domain_nml
-  block_size_x = 30
-  block_size_y = 27
+  block_size_x      = 30
+  block_size_y      = 27
   distribution_type = "roundrobin"
   distribution_wght = "latitude"
-  maskhalo_bound = .true.
-  maskhalo_dyn = .true.
-  maskhalo_remap = .true.
-  max_blocks = -1
-  ns_boundary_type = "tripole"
-  nx_global = 1440
-  ny_global = 1152
-  processor_shape = "square-ice"
+  maskhalo_bound    = .true.
+  maskhalo_dyn      = .true.
+  maskhalo_remap    = .true.
+  max_blocks        = -1
+  ns_boundary_type  = "tripole"
+  nx_global         = 1440
+  ny_global         = 1152
+  processor_shape   = "square-ice"
 /
 &ice_prescribed_nml
 /
