@@ -285,7 +285,7 @@ CLOCK_attributes::
 ::
 
 ATM_attributes::
-     Verbosity = off
+     Verbosity = on
      aqua_planet = .false.
      perpetual = .false.
      perpetual_ymd = -999
@@ -293,15 +293,15 @@ ATM_attributes::
 
 ICE_attributes::
      eps_imesh = 1e-13 # allowed error between angles in mesh file and cice grid
-     Verbosity = off
+     Verbosity = on
 ::
 
 OCN_attributes::
-     Verbosity = off
+     Verbosity = on
 ::
 
 ROF_attributes::
-     Verbosity = off
+     Verbosity = on
      mesh_rof = ./INPUT/access-om3-25km-nomask-ESMFmesh.nc
 ::
 
