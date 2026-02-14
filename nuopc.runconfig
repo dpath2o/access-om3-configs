@@ -1,5 +1,5 @@
 DRIVER_attributes::
-     Verbosity = off
+     Verbosity = 1
      cime_model = cesm
      drv_restart_pointer = rpointer.cpl
      logFilePostFix = .log
@@ -122,7 +122,7 @@ ALLCOMP_attributes::
 ::
 
 MED_attributes::
-     Verbosity = off
+     Verbosity = 1
      aoflux_grid = ogrid
      atm2ice_map = unset
      atm2lnd_map = unset
@@ -285,7 +285,7 @@ CLOCK_attributes::
 ::
 
 ATM_attributes::
-     Verbosity = on
+     Verbosity = 1
      aqua_planet = .false.
      perpetual = .false.
      perpetual_ymd = -999
@@ -293,15 +293,15 @@ ATM_attributes::
 
 ICE_attributes::
      eps_imesh = 1e-13 # allowed error between angles in mesh file and cice grid
-     Verbosity = on
+     Verbosity = 1
 ::
 
 OCN_attributes::
-     Verbosity = on
+     Verbosity = 1
 ::
 
 ROF_attributes::
-     Verbosity = on
+     Verbosity = 1
      mesh_rof = ./INPUT/access-om3-25km-nomask-ESMFmesh.nc
 ::
 
