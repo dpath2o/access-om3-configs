@@ -49,7 +49,7 @@ USE_CONTEMP_ABSSAL = True       !   [Boolean] default = False
 USE_REGRIDDING = True           !   [Boolean] default = False
                                 ! If True, use the ALE algorithm (regridding/remapping). If False, use the
                                 ! layered isopycnal algorithm.
-DT = 900.0                      !   [s]
+! DT = 900.0                      !   [s]
                                 ! The (baroclinic) dynamics time step.  The time-step that is actually used will
                                 ! be an integer fraction of the forcing time-step (DT_FORCING in ocean-only mode
                                 ! or the coupling timestep in coupled mode.)
@@ -603,7 +603,7 @@ LOTW_BBL_ANSWER_DATE = 99991231 ! default = 20190101
                                 ! calculations.  Values below 20240630 recover the original answers, while
                                 ! higher values use more accurate expressions.  This only applies when
                                 ! USE_LOTW_BBL_DIFFUSIVITY is true.
-SIMPLE_TKE_TO_KD = True         !   [Boolean] default = False
+! SIMPLE_TKE_TO_KD = True         !   [Boolean] default = False
                                 ! If true, uses a simple estimate of Kd/TKE that will work for arbitrary
                                 ! vertical coordinates. If false, calculates Kd/TKE and bounds based on exact
                                 ! energetics for an isopycnal layer-formulation.
@@ -757,7 +757,7 @@ USE_NEUTRAL_DIFFUSION = True    !   [Boolean] default = False
                                 ! If true, enables the neutral diffusion module.
 
 ! === module MOM_sum_output ===
-MAXTRUNC = 10000                !   [truncations save_interval-1] default = 0
+! MAXTRUNC = 10000                !   [truncations save_interval-1] default = 0
                                 ! The run will be stopped, and the day set to a very large value if the velocity
                                 ! is truncated more than MAXTRUNC times between energy saves.  Set MAXTRUNC to 0
                                 ! to stop if there is any truncation of velocities.
