@@ -4,6 +4,3 @@
 DT = 600.0
 MAXTRUNC = 200000
 ENERGYSAVEDAYS = 0.25
-
-# ---- recommended given your warning ----
-SIMPLE_TKE_TO_KD = False
