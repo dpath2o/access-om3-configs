@@ -1,11 +1,11 @@
 format: yamanifest
 version: 1.0
 ---
-work/INPUT/ADD_high-res_cstln_v7p9_GI.nc:
-  fullpath: /g/data/gv90/da1339/coastal_drag/form_factors/ADD_high-res_cstln_v7p9_GI.nc
+work/INPUT/ADD_high-res_cstln_v7p9_GI_ocean_hgrid.nc:
+  fullpath: /g/data/gv90/da1339/coastal_drag/form_factors/ADD_high-res_cstln_v7p9_GI_ocean_hgrid.nc
   hashes:
-    binhash: c0b2c84e6ecb9badb15335a0506eb914
-    md5: 9437f425072f7eb045fd1f897e9e5a14
+    binhash: 1a537061909c1301020ff11f59ccf15e
+    md5: 3d759b205e9ded832b0fc87850424c5f
 work/INPUT/JRA55do-datm-ESMFmesh.nc:
   fullpath: /g/data/vk83/configurations/inputs/access-om3/share/meshes/share/2024.09.16/JRA55do-datm-ESMFmesh.nc
   hashes:

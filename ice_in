@@ -21,13 +21,13 @@
   grid_atm        = "A"
   grid_file       = "./INPUT/ocean_hgrid.nc"
   grid_format     = "mom_nc"
-  grid_ice        = "B"
+  grid_ice        = "C"
   grid_ocn        = "A"
   grid_type       = "tripole"
   grid_outfile    = .true.
   kcatbound       = 0
   kmt_file        = "./INPUT/kmt.nc"
-  F2_file         = './INPUT/ADD_high-res_cstln_v7p9_GI.nc'
+  F2_file         = './INPUT/ADD_high-res_cstln_v7p9_GI_ocean_hgrid.nc'
   F2x_varname     = 'F2x'
   F2y_varname     = 'F2y'
   F2_map_method   = 'max'
@@ -51,8 +51,8 @@
   Ktens                = 0.2
   e_yieldcurve         = 1.2
   e_plasticpot         = 1.2
-  boundary_condition   = 'no_slip'
-  lateral_drag         = .false.
+  boundary_condition   = 'free_slip'
+  lateral_drag         = .true.
   form_func            = 'static'
   Cs                   = 1e-3
   Cq                   = 0.0

@@ -30,7 +30,7 @@ model: access-om3
 #exe: access-om3-MOM6-CICE6
 exe: /g/data/gv90/da1339/spack/0.22/environments/om3_cice6_dev/.spack-env/view/bin/access-om3-MOM6-CICE6
 input:
-    - /g/data/gv90/da1339/coastal_drag/form_factors/ADD_high-res_cstln_v7p9_GI.nc
+    - /g/data/gv90/da1339/coastal_drag/form_factors/ADD_high-res_cstln_v7p9_GI_ocean_hgrid.nc
     - /g/data/gv90/da1339/afim_input/cice/ic/iced.1900-01-01-10800.nc
     - /g/data/vk83/configurations/inputs/access-om3/cice/grids/global.25km/2025.11.27/kmt.nc
     - /g/data/vk83/configurations/inputs/access-om3/mom/grids/mosaic/global.25km/2025.09.02/ocean_hgrid.nc
