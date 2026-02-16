@@ -35,6 +35,7 @@ storage:
     - jk72
   scratch:
     - gv90
+    - ol01
 model: access-om3
 #exe: access-om3-MOM6-CICE6
 exe: /g/data/gv90/da1339/spack/0.22/environments/om3_cice6_dev/.spack-env/view/bin/access-om3-MOM6-CICE6
@@ -75,12 +76,19 @@ collate:
   ncpus: 4
   queue: normalsr
   exe: mppnccombine-fast
+sync:
+  enable: True
+  base_path: /g/data/gv90/da1339/afim_output/LD-om3-exp01
+  restarts: True
+  exclude_uncollated: False
+  runlog: True
+  queue: copyq
 userscripts:
     setup: /usr/bin/bash -lc "./userscripts/spack_setup.sh; /usr/bin/bash /g/data/vk83/apps/om3-scripts/payu_config/setup.sh"
     archive: /usr/bin/bash /g/data/vk83/apps/om3-scripts/payu_config/archive.sh
-postscript: -v PROJECT,SCRIPTS_DIR=/g/data/vk83/apps/om3-scripts \
-            -lstorage=${PBS_NCI_STORAGE}+scratch/gv90+gdata/vk83+gdata/gv90+gdata/qv56 \
-            /g/data/vk83/apps/om3-scripts/payu_config/postscript.sh
+#postscript: -v PROJECT,SCRIPTS_DIR=/g/data/vk83/apps/om3-scripts \
+#            -lstorage=${PBS_NCI_STORAGE}+scratch/gv90+gdata/vk83+gdata/gv90+gdata/qv56 \
+#            /g/data/vk83/apps/om3-scripts/payu_config/postscript.sh
 #postscript: -v PROJECT,SCRIPTS_DIR=/g/data/vk83/apps/om3-scripts -lstorage=${PBS_NCI_STORAGE}+gdata/xp65+gdata/gv90 /g/data/vk83/apps/om3-scripts/payu_config/postscript.sh
-restart_freq: 1YS
+restart_freq: 1MS
 payu_minimum_version: 1.2.0
