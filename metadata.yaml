@@ -1,6 +1,6 @@
 contact: dpath2o
 email: dpath2o@mac.com
-created: '2026-02-13'
+created: '2026-02-16'
 description: |-
   25km ACCESS-OM3 global configuration under interannual forcing.
   Initial conditions of temperature and salinity are from WOA23.
@@ -22,8 +22,8 @@ license: CC-BY-4.0
 model: ACCESS-OM3
 url: git@github.com:ACCESS-NRI/access-om3-configs.git
 version: 1.0-beta
-experiment_uuid: 154bc4df-0046-48e0-8413-a242d29783b1
-name: 25km_jra_iaf_ld-dpath2o/dev-MC_25km_jra_iaf-154bc4df
+experiment_uuid: 95adec7f-f841-4bc3-a3fb-962674406b0c
+name: 25km_jra_iaf_ld-dpath2o/dev-MC_25km_jra_iaf-95adec7f
 schema_version:  # The version of the schema (string)
 long_description: # Long description of the experiment (string)
 frequency: # The frequency(/ies) included in the experiment (string)
