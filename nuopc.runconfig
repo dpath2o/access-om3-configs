@@ -273,11 +273,11 @@ CLOCK_attributes::
      restart_ymd = -999
      rof_cpl_dt = 99999 #not used
      start_tod = 0
-     start_ymd = 19930701
-     stop_n = 4
-     stop_option = nmonths
+     start_ymd = 19930101
+     stop_n = 2
+     stop_option = nyears
      stop_tod = 0
-     stop_ymd = 19931031
+     stop_ymd = 19941231
      tprof_n = -999
      tprof_option = never
      tprof_ymd = -999

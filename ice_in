@@ -115,83 +115,114 @@
   !-----------------------------------
   ! These fields are on by default (in ice_history_mechred.F90) but lets turn them off
   !-----------------------------------
-  f_dardg1dt  = 'x', f_dardg2dt   = 'x'
+  f_dardg1dt  = 'x'
+  f_dardg2dt  = 'x'
   f_dvirdgdt  = 'x'
 /
 &icefields_pond_nml
 /
 &icefields_snow_nml
-  f_fsloss = "m"
+  f_fsloss   = "m"
   f_meltsliq = "m"
   f_rhos_cmp = "m"
   f_rhos_cnt = "m"
-  f_rsnw = "m"
+  f_rsnw     = "m"
   f_smassice = "m"
   f_smassliq = "m"
 /
 &icefields_nml
-  f_aice = "md"
-  f_aicen = "m"
-  f_bounds = .false.
+  f_tlon         = .true.  , f_tlat         = .true.
+  f_ulon         = .true.  , f_ulat         = .true.
+  f_nlon         = .true.  , f_nlat         = .true.
+  f_elon         = .true.  , f_elat         = .true.
+  f_tmask        = .true.  , f_umask        = .true.
+  f_nmask        = .true.  , f_emask        = .true.
+  f_tarea        = .true.  , f_uarea        = .true.
+  f_narea        = .true.  , f_earea        = .true.
+  f_dxt          = .true.  , f_dyt          = .true.
+  f_dxu          = .true.  , f_dyu          = .true.
+  f_dxe          = .true.  , f_dye          = .true.
+  f_dxn          = .true.  , f_dyn          = .true.
+  f_HTN          = .true.  , f_HTE          = .true.
+  f_aice         = "d"
+  f_aicen        = "m"
+  f_bounds       = .false.
   f_fcondtopn_ai = "m"
-  f_congel = "md"
-  f_dvidtd = "md"
-  f_dvidtt = "md"
-  f_fmelttn_ai = "m"
-  f_frzmlt = "md"
-  f_frazil = "md"
-  f_flatn_ai   = "m"
-  f_fsens_ai = "m"
-  f_fsensn_ai = "m"
-  f_fsurfn_ai = "m"
-  f_hi = "md"
-  f_hs = "md"
-  f_sifb = "md"
-  f_snoice = "md"
-  f_uvel = "md" , f_vvel = "md"
-  f_vicen = "m"
-  !-----------------------------------
-  ! These fields are on by default (in ice_history_shared.F90) but lets turn them off
-  !-----------------------------------
-  f_tlon         = .false. , f_tlat         = .false.
-  f_ulon         = .false. , f_ulat         = .false.
-  f_nlon         = .false. , f_nlat         = .false.
-  f_elon         = .false. , f_elat         = .false.
-  f_tmask        = .false. , f_umask        = .false.
-  f_nmask        = .false. , f_emask        = .false.
-  f_tarea        = .false. , f_uarea        = .false.
-  f_narea        = .false. , f_earea        = .false.
-  f_dxt          = .false. , f_dyt          = .false.
-  f_dxu          = .false. , f_dyu          = .false.
-  f_dxe          = .false. , f_dye          = .false.
-  f_dxn          = .false. , f_dyn          = .false.
-  f_HTN          = .false. , f_HTE          = .false.
-  f_albpnd = 'x'
-  f_atmdir = 'x' , f_atmspd = 'x'
-  f_coszen = 'x'
-  f_dsnow = 'x'
-  f_evap = 'x'
-  f_fbot = 'x'
-  f_fhocn = 'x'
-  f_flat = 'x'
-  f_fresh = 'x'
-  f_fswthru = 'x'
-  f_fsurf_ai = 'x'
-  f_hisnap = 'x', f_aisnap = 'x',
-  f_icedir = 'x'
-  f_icespd = 'x'
-  f_mlt_onset = 'x', f_frz_onset  = 'x'
-  f_ocndir = 'x' , f_ocnspd = 'x'
-  f_rain = 'x'
-  f_fsens = 'x'
-  f_flwup = 'x'
-  f_sig1 = 'x', f_sig2 = 'x'
-  f_sigP = 'x'
-  f_snow = 'x'
-  f_sst = 'x'
-  f_sss = 'x'
-  f_fswabs = 'x'
-  f_taubx = 'x' , f_tauby = 'x'
-  f_Tref = 'x', f_Qref = 'x'
-  f_uocn = 'x' , f_vocn = 'x'
+  f_congel       = "d"
+  f_dvidtd       = "d"
+  f_dvidtt       = "d"
+  f_daidtt       = 'd'
+  f_daidtd       = 'd'
+  f_fmelttn_ai   = "m"
+  f_frzmlt       = "d"
+  f_frazil       = "d"
+  f_flatn_ai     = "m"
+  f_fsens_ai     = "m"
+  f_fsensn_ai    = "m"
+  f_fsurfn_ai    = "m"
+  f_hi           = "d"
+  f_hs           = "d"
+  f_sifb         = "d"
+  f_snoice       = "d"
+  f_uvel         = "d"
+  f_vvel         = "d"
+  f_vicen        = "m"
+  f_albpnd       = 'm'
+  f_atmdir       = 'm'
+  f_atmspd       = 'm'
+  f_coszen       = 'm'
+  f_dsnow        = 'd'
+  f_evap         = 'm'
+  f_fbot         = 'd'
+  f_fhocn        = 'd'
+  f_flat         = 'm'
+  f_fresh        = 'm'
+  f_fswthru      = 'm'
+  f_fsurf_ai     = 'm'
+  f_hisnap       = 'm'
+  f_aisnap       = 'm'
+  f_icedir       = 'm'
+  f_icespd       = 'm'
+  f_mlt_onset    = 'm'
+  f_frz_onset    = 'm'
+  f_ocndir       = 'm'
+  f_ocnspd       = 'm'
+  f_rain         = 'm'
+  f_fsens        = 'm'
+  f_flwup        = 'm'
+  f_strairx      = 'd'
+  f_strairy      = 'd'
+  f_strtltx      = 'd'
+  f_strtlty      = 'd'
+  f_strcorx      = 'd'
+  f_strcory      = 'd'
+  f_strocnx      = 'd'
+  f_strocny      = 'd'
+  f_strintx      = 'd'
+  f_strinty      = 'd'
+  f_taubx        = 'd'
+  f_tauby        = 'd'
+  f_KuxN         = 'd'
+  f_KuyN         = 'd'
+  f_KuxE         = 'd'
+  f_KuyE         = 'd'
+  f_Kux          = 'd'
+  f_Kuy          = 'd'
+  f_F2N          = 'd'
+  f_F2E          = 'd'
+  f_strength     = 'd'
+  f_divu         = 'd'
+  f_shear        = 'd'
+  f_vort         = 'd'
+  f_sig1         = 'd'
+  f_sig2         = 'd'
+  f_sigP         = 'd'
+  f_snow         = 'd'
+  f_sst          = 'd'
+  f_sss          = 'd'
+  f_uocn         = 'd'
+  f_vocn         = 'd'
+  f_fswabs       = 'm'
+  f_Tref         = 'm'
+  f_Qref         = 'm'
 /
